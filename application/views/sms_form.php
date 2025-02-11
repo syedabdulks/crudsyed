@@ -33,7 +33,7 @@ input[type=submit] {
         </style>
 
         <body>
-            <h1>SMS FORM</h1>
+            <h1>message FORM</h1>
 
           <div>
             <form method='POST' action="<?=base_url('sms/send_sms')?>">
