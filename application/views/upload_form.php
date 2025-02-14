@@ -62,9 +62,9 @@ div {
 
 
 <div>
-  <form method="POST" enctype="multipart/form-data" action="<?=base_url('Upload/do_upload')?>">
+  <form method="POST" enctype="multipart/form-data" action="<?=base_url('Uploadfile/do_upload')?>">
     <label for="file">Upload File</label>
-    <input type="file" id="file" name="files[]" multiple>
+    <input type="file" id="file" name="file" multiple>
 
     <input type="submit" value="Submit">
   </form>
@@ -76,10 +76,12 @@ div {
 		<th>Type</th>
 		<th>Size</th>
 		<th>Path</th>
+    <th>Image</th>
+    <th>Extension</th>
 	</tr>
 	<?php if($data!=null) {
-        foreach($data as $data)
-        print_r ($data);
+        // foreach($data as $data)
+        // print_r ($data);
 
         ?>
 	<tr>
@@ -87,6 +89,8 @@ div {
 		<td><?=$data['file_type']?></td>
 		<td><?=$data['file_size']?></td>
 		<td><?=$data['full_path']?></td>
+    <td><?=$data['is_image']?></td>
+    <td><?=$data['file_ext']?></td>
 	</tr>
 	<?php } ?>
 	</table>

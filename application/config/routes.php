@@ -56,3 +56,4 @@ $route['users'] = 'users/submit';
 $route['login_users'] = 'users/login_user';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
